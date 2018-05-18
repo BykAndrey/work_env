@@ -8,7 +8,7 @@ var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
 
 gulp.task('default',function(){
     return gulp.watch('./app/less/*.less',function(){
-        //console.log('rewrite');
+        console.log('rewrite', (new Date()).getMinutes());
         return gulp.src('./app/less/*.less')
             .pipe(less({ plugins: [autoprefixPlugin] }))
             .pipe(cleanCSS({compatibility: 'ie8'}))
