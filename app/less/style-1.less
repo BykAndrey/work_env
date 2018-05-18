@@ -2,7 +2,7 @@
 //@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&subset=cyrillic');
 
 
-
+@import url('normalize.css');
 
 //@blue: #8ebfed;
 //@blue-dark: #86b3de;
@@ -16,10 +16,16 @@
     padding: 0;
    
     outline: 0;
-    text-decoration: none;
-    list-style: none;
+    
+   
 }
 
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 *::-moz-focus-inner {
   border: 0;
 }
@@ -33,7 +39,7 @@ body {
 }
 
 .container {
-    //width: 1170px;
+    max-width: 1170px;
     margin: 0px auto;
 }
 
